@@ -21,7 +21,7 @@ export default function Page() {
     setError(null);
     setResults(null);
     try {
-      const r = await fetch("http://localhost:8000/recommend", {
+      const r = await fetch("https://carcostiq.onrender.com/recommend", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ question: text, userId: "demo-user-1" })
