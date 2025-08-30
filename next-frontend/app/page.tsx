@@ -1,5 +1,4 @@
 "use client";
-import Link from "next/link";
 
 import { useState } from "react";
 
@@ -63,16 +62,10 @@ export default function Page() {
         >
           Clear
         </button>
-        <Link href="/help">
-          <button className="px-4 py-2 rounded border">
-            Help
-          </button>
-        </Link>
-        <Link href="/listings">
-          <button className="px-4 py-2 rounded border">
-            Post a Listing
-          </button>
-        </Link>
+        <button onClick={() => alert("Button clicked!")}
+          className="px-4 py-2 rounded border">
+          Help
+        </button>
       </div>
 
       {error && <div className="mt-4 text-red-600">Error: {error}</div>}
